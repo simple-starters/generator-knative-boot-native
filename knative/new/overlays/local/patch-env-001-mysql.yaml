@@ -1,0 +1,14 @@
+---
+conditional:
+  onDependency: mysql-connector-java
+actions:
+  inject:
+    after: 'value: local'
+    to: kubernetes/overlays/local/patch-env.yaml
+    skip: 'mysql-password'
+---
+    - name: MYSQL_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: mysql
+          key: mysql-password
