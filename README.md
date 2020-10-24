@@ -1,6 +1,6 @@
 # generator-knative-boot-native
 
-Generator for Knative Resources based on Kustomize and Skaffold compiling as a GraalVM native image.
+Generator for Knative Resources deployed with Skaffold compiled as a GraalVM native image.
 
 ## Local Services
 
