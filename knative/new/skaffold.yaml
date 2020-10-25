@@ -14,15 +14,15 @@ profiles:
             env: 
               - BP_BOOT_NATIVE_IMAGE=1
               - BP_BOOT_NATIVE_IMAGE_BUILD_ARGUMENTS=-Dspring.native.remove-yaml-support=true
-          dependencies:
-            paths:
-              - src
-              - pom.xml
+            dependencies:
+              paths:
+                - src
+                - pom.xml
       tagPolicy:
         sha256: {}
       local:
         push: false
     deploy:
-      kustomize:
-        paths:
+      kubectl:
+        manifests:
           - kubernetes/service.yaml
