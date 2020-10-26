@@ -2,8 +2,6 @@
 
 Generator for Knative Resources deployed with Skaffold compiled as a GraalVM native image.
 
-## Local Services
-
 ## Run the application
 
 To start the application on a local cluster run:
