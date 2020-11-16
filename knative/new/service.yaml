@@ -10,7 +10,7 @@ spec:
   template:
     spec:
       containers:
-        - image: dev.local/{{artifactId}}
+        - image: {{artifactId}}
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
